@@ -8,7 +8,7 @@ import (
 func Test_GetApiKey(t *testing.T) {
 	_, err := GetAPIKey(nil)
 
-	if err != nil {
+	if err == nil {
 		t.Errorf("No error, expected error")
 	}
 
