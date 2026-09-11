@@ -1,3 +1,7 @@
 {pkgs, ...}: {
-  packages = [pkgs.bootdev-cli];
+  packages = with pkgs; [
+    turso-cli
+    goose
+    bootdev-cli
+  ];
 }
